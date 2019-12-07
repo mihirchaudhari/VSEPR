@@ -5,5 +5,5 @@ function main() {
 }
 
 function loadStuff() {
-  $("nav").load("/docs/html/nav.html")
+  $("nav").load("/VSEPR/docs/html/nav.html")
 }
