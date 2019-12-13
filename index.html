@@ -14,19 +14,49 @@
       grid-column: 1 / span 12;
       border-radius: 4px;
       box-shadow:0 1px 3px rgba(0,0,0,.25);
+      background-color: #fff;
+      overflow: hidden;
     }
     .card
     {
       border-radius: 4px;
       box-shadow: 0 1px 3px rgba(0,0,0,.25);
-      overflow:hidden
+      overflow: hidden;
+      grid-column: 1 / span 12;
+      background-color: #fff;
     }
+    hr
+    {
+      border: none;
+      background-color: #ccc;
+      height: 1px;
+      margin: 0;
+    }
+    @media only screen and (min-width:480px)
+    {
+      #video {grid-column: 1 / span 8}
+      #main .card:nth-child(2) {grid-column: 9 / span 4}
+    }
+    p {font-family: sans-serif}
   </style>
 </head>
 <body>
   <nav></nav>
   <div id="main">
-    <video controls style="width:100%" id="video"></vdieo>
+    <div controls style="width:100%" id="video">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/x2-nP7i6T34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="card">
+      <h1 class="txt-center">VSEPR</h1>
+      <hr>
+      <div class="pad-3">
+        <p class="mar-0">Valence Shell Electron Pair Repulsion. That's a mouthful, but the guy in the video explains it well (I hope). Atoms aren't just existing, they bond together to create more fancy stuff. The only thing is, atoms have to follow certain rules (must suck for them) but luckily for us it creates some consistency (which is already pretty rare with chemistry having an exception for almost everything).</p>
+        <br>
+        <p class="mar-0">The VSEPR theory basically means that 'lone pairs' (just a pair of electrons) in the valence shell will cause repulsion. Atoms around a central atom and lone pairs are negative, so they want to be as close as possible to the central atom while being as far apart as possible from each other.</p>
+        <br>
+        <p class="mar-0">Alright, you are an expert on VSEPR now, watch the video again if you are still confused.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>

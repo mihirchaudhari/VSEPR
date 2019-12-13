@@ -537,6 +537,9 @@ template {
   text-align: right;
 }
 .txt-center {
+  text-align: center;
+}
+.txt-left {
   text-align: left;
 }
 
@@ -817,6 +820,7 @@ img {
 }
 p, h1, h2, h3, h4, h5, h6 {
   font-family: 'open-sans', 'sans-serif';
+  font-weight: normal;
 }
 body {
   background-color: #f5f5f5;
@@ -826,4 +830,5 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 16px;
   margin:16px;
+  z-index:-10;
 }
